@@ -21,7 +21,7 @@ export default function Hero() {
                 href="/products"
                 className="rounded-md bg-indigo-700 px-8 py-3 text-center text-base font-medium text-white shadow-sm transition-colors hover:bg-indigo-800"
               >
-                사주 상담 신청
+                사주 정보 받아보기
               </Link>
               <Link
                 href="/introduction"
