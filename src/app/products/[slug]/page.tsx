@@ -253,6 +253,25 @@ export default function ProductDetailPage() {
                   </div>
                 </div>
 
+                {/* 외부 링크 버튼 */}
+                {(product.slug === "compatibility-saju" ||
+                  product.slug === "traditional-saju") && (
+                  <div className="mb-8">
+                    <a
+                      href={
+                        product.slug === "compatibility-saju"
+                          ? "https://sajubacksa1.dbcart.net/"
+                          : "https://sajubacksa3.dbcart.net/"
+                      }
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full rounded-lg border-2 border-indigo-700 bg-white px-6 py-4 text-center font-medium text-indigo-700 shadow-sm transition-all hover:bg-indigo-50 hover:shadow-md active:scale-[0.98]"
+                    >
+                      자세히 보기
+                    </a>
+                  </div>
+                )}
+
                 {/* 액션 버튼 */}
                 <div className="mt-auto">
                   <button
